@@ -1,0 +1,18 @@
+.boton{
+    background-color: peru;
+    border: map-get($boton , borde );
+    padding: map-get($boton , padding );
+    border-radius: map-get($boton, radio );
+    color: map-get($boton , color );
+    margin: map-get($boton , margen );
+    width: 100px;
+}
+
+.boton-primario{
+    @extend .boton;
+    @include propiedadesPrincipal (rgb(0, 0, 0), #fff, 100px, auto )
+}
+
+.boton:hover{
+    background-color: rgb(180, 176, 175);
+}
